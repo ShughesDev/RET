@@ -16,7 +16,7 @@ version = mesa_ret.__version__
 
 # -- Options for HTML output ---------------------------------------------------
 
-html_theme = "sphinx_rtd_theme"
+html_theme = "alabaster"
 html_title = "RET"
 html_logo = "RetLogo.jpg"
 html_theme_options = {
