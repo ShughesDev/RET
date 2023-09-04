@@ -13,11 +13,11 @@ from datetime import datetime, timedelta
 ### RET
 from mesa_ret.model import RetModel
 from mesa_ret.agents.agent import RetAgent, Affiliation
-from mesa_ret.agenttype import AgentType
+from mesa_ret.agents.agenttype import AgentType
 
 from mesa_ret.behaviours.fire import FireBehaviour
 from mesa_ret.behaviours.move import AircraftMoveBehaviour
-from mesa_ret.behaviouts.sense import SenseBehaviour
+from mesa_ret.behaviours.sense import SenseBehaviour
 
 from mesa_ret.orders.order import Order
 from mesa_ret.orders.tasks.fire import FireAtTargetTask

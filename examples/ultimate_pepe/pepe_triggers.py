@@ -54,7 +54,7 @@ class HostileAgentInRangeTrigger(Trigger):
                         distance_calculator = DistanceCalculator,
                         agent = self._agent,
                         range = self._rnge,
-                        )
+                        ),
                     HostileAgents(),
                 ]
             )
