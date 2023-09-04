@@ -5,6 +5,11 @@ Created on Mon Sep  4 21:38:17 2023
 
 @author: Shugsy
 
+This is unprofessional, like, n tryin to be educational and ting.
+
+Please have a laugh and learn a little with our pal the frogge:
+        Pepe.
+
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 ⠀⠀⢀⣠⠤⠶⠖⠒⠒⠶⠦⠤⣄⠀⠀⠀⣀⡤⠤⠤⠤⠤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -89,6 +94,10 @@ class PepeModel(RetModel):
     def __init__(self) -> None:
         """
         Initialise that b fo sho my g.
+        
+        Basically using the super() init function- this effectively reuses the
+        init from the parent class (RetModel). You'll see it lays out the real
+        base details- timing and what the space is.
         """
         super().__init__(
             start_time = datetime(2023, 9, 4, 21, 43),
@@ -97,6 +106,7 @@ class PepeModel(RetModel):
             space = self.set_up_space(),
             )
         
+        #create fixed height bands for air units to follow:
         self.height_bands = [
             AbsoluteHeightBand("500m", 500),
             AbsoluteHeightBand("2000m", 2000),
@@ -115,16 +125,16 @@ class PepeModel(RetModel):
             - sets what cultures are which colours
         
         Two housefrogges, both alike in ribbity
-        (In fair Continious space with terrain and culture 3d, where we lay our scene),
+        (In fair <continious space with terrain and culture 3d>, where we lay our scene),
         From ancient grudge break to new mutiny,
         Where civil blood makes civil frogges unclean.
         """
         return ContinuousSpaceWithTerrainAndCulture3d(
-            x_max = 46500,#m
+            x_max = 46500,#m   <- It's generally a good idea to put units as comments when initialising numbers
             y_max = 33700,#m
             terrain_image_path = os.path.join("images", "grenouille_de_couleur_mort.png"),
-            height_black = 0.0,
-            height_white = 0.0,
+            height_black = 0.0,#m
+            height_white = 0.0,#m
             culture_image_path = os.path.join("images", "grenouille_de_couleur_minimale.png"),
             culture_dictionary={
                 (0, 255, 0): Culture("land"),#verte
