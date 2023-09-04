@@ -1,0 +1,15 @@
+
+Veuillez voir ci-dessous les valeurs RVB associées aux couleurs utilisées dans grenouille_de_couleur_minimale.png
+
+verte: (0, 255, 0)
+rouge: (255, 0, 0)
+bleue: (0, 0, 255)
+blanche: (255, 255, 255)
+noire: (0, 0, 0)
+
+
+
+Biko lee n'okpuru maka ụkpụrụ rgb jikọtara na agba eji na grenouille_de_couleur_minimale.png
+
+
+Gweler isod am y gwerthoedd rgb sy'n gysylltiedig â'r lliwiau a ddefnyddir yn grenouille_de_couleur_minimale.png
