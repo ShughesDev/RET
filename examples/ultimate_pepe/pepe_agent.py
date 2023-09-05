@@ -58,7 +58,10 @@ class PepeAgent(RetAgent):
     
     '''
     def __init__(self, model: RetModel) -> None:
-        
+        """
+        Elite frogge Pepe at your service.
+        """
+        self.model = model
         super().__init__(
             model = model,
             pos = (500, 500, "500m"),#m
