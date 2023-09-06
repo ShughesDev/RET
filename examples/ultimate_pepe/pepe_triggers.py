@@ -37,7 +37,7 @@ def DistanceCalculator(p, q):
 
 class HostileAgentInRangeTrigger(Trigger):
     def __init__(self, rnge: float, agent: RetAgent) -> None:
-        super().__init__()
+        super().__init__(log = True)
         self._range = rnge
         self._agent = agent
     
@@ -53,7 +53,7 @@ class HostileAgentInRangeTrigger(Trigger):
                     NearbyAgents(
                         distance_calculator = DistanceCalculator,
                         agent = self._agent,
-                        range = self._rnge,
+                        range = self._range,
                         ),
                     HostileAgents(),
                 ]
@@ -65,6 +65,6 @@ class HostileAgentInRangeTrigger(Trigger):
     def get_new_instance(self) -> HostileAgentInRangeTrigger:
         """Get new instance of Trigger."""
         return HostileAgentInRangeTrigger(
-            rnge = self._rnge,
+            rnge = self._range,
             agent = self._agent,
         )

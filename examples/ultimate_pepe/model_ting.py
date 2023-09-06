@@ -99,19 +99,19 @@ class PepeModel(RetModel):
         init from the parent class (RetModel). You'll see it lays out the real
         base details- timing and what the space is.
         """
-        super().__init__(
-            start_time = datetime(2023, 9, 4, 21, 43),
-            time_step = timedelta(seconds = 30),
-            end_time = datetime(2023, 9, 5, 0, 0),
-            space = self.set_up_space(),
-            )
-        
         #create fixed height bands for air units to follow:
         self.height_bands = [
             AbsoluteHeightBand("500m", 500),
             AbsoluteHeightBand("2000m", 2000),
             AbsoluteHeightBand("12000m", 12000),
             ]
+        
+        super().__init__(
+            start_time = datetime(2023, 9, 4, 21, 43),
+            time_step = timedelta(seconds = 30),
+            end_time = datetime(2023, 9, 5, 0, 0),
+            space = self.set_up_space(),
+            )
         
         self.pepe = self.create_the_pepe() #create the one true pepe
         self.hostile_agents = self.create_hostile_agents() #create hostile agents
@@ -152,7 +152,10 @@ class PepeModel(RetModel):
         """
         Pepe is essentially just an attack helicopter, but fun(-er).
         """
-        return PepeAgent(model = self)
+        
+        pepe_the_frogge = PepeAgent(model = self)
+        
+        return pepe_the_frogge
     
     def create_hostile_agents(self) -> list:
         """
