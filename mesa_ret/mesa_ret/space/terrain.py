@@ -7,7 +7,7 @@ import imageio
 import numpy as np
 from mesa_ret.space.imageutils import check_image_aspect_ratio, get_image_pixel_size
 from mesa_ret.types import Coordinate3d
-from scipy.interpolate.interpolate import RegularGridInterpolator
+from scipy.interpolate import RegularGridInterpolator
 
 if TYPE_CHECKING:
 
