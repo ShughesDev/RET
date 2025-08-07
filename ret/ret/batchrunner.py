@@ -2,7 +2,8 @@
 ###### Imports
 from __future__ import annotations
 from typing import TYPE_CHECKING
-#from typing import Any, Callable, Optional, Union
+from typing import Any, Callable, Optional, Union
+from pathlib import Path
 
 import warnings
 from itertools import count
@@ -17,7 +18,7 @@ from ret.sampling import LatinHypercubeParameterSampler
 
 if TYPE_CHECKING:
     from ret.model import RetModel
-    from pathlib import Path
+
 
 ###### Classes
 class FixedReportingBatchRunner(FixedBatchRunner):
