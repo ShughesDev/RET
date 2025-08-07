@@ -2,7 +2,7 @@
 
 from setuptools import find_packages, setup
 
-requires = ["ret", "mesa"]
+requires = ["mesa_ret", "mesa"]
 
 version = "v0a"
 with open("Readme.md", "r", encoding="utf-8") as f:

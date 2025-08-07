@@ -31,7 +31,7 @@ var/
 *.spec
 
 # Auto-documentation files
-sphinx/ret*.rst
+sphinx/mesa_ret*.rst
 sphinx/modules.rst
 sphinx-out/*
 sphinx/_build
@@ -104,10 +104,6 @@ cov.xml
 /typings
 
 output/*
-/testsret/server_user_id.txt
-/server_user_id.txt
-/output
-/testsret/output
-/*.csv
-/saved_data
-/.vscode
+.DS_Store
+mesa_ret/.DS_Store
+mesa_ret/mesa_ret/.DS_Store

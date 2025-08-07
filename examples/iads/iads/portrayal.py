@@ -3,19 +3,19 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING
 
-from ret.sensing.perceivedworld import (
+from mesa_ret.sensing.perceivedworld import (
     And,
     DetectedAgents,
     HostileAgents,
     IdentifiedAgents,
     RecognisedAgents,
 )
-from ret.visualisation.retportrayal import ret_portrayal
+from mesa_ret.visualisation.retportrayal import ret_portrayal
 
 if TYPE_CHECKING:
     from typing import Any, Optional, Union
 
-    from ret.agents.agent import RetAgent
+    from mesa_ret.agents.agent import RetAgent
 
 
 def unit_portrayal(agent: RetAgent) -> Optional[dict[str, Any]]:
@@ -30,6 +30,7 @@ def unit_portrayal(agent: RetAgent) -> Optional[dict[str, Any]]:
     portrayal: Optional[dict[str, Any]] = ret_portrayal(agent)
 
     if portrayal is not None:
+
         if agent._orders is None:
             orders: Union[str, list[str]] = "None"
         else:

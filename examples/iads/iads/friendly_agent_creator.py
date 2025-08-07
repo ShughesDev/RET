@@ -1,35 +1,32 @@
-"""Utilities to generate friendly agents for IADS scenario.
-
-Unit icons created using: <https://spatialillusions.com/>
-"""
+"""Utilities to generate friendly agents for IADS scenario."""
 from __future__ import annotations
 
 from datetime import timedelta
 
-from ret.agents.agent import Affiliation, RetAgent
-from ret.agents.agenttype import AgentType
-from ret.agents.groupagent import GroupAgent
-from ret.behaviours.communicate import (
+from mesa_ret.agents.agent import Affiliation, RetAgent
+from mesa_ret.agents.agenttype import AgentType
+from mesa_ret.agents.groupagent import GroupAgent
+from mesa_ret.behaviours.communicate import (
     CommunicateOrdersBehaviour,
     CommunicateWorldviewBehaviour,
 )
-from ret.behaviours.deploycountermeasure import DeployCountermeasureBehaviour
-from ret.behaviours.fire import FireBehaviour
-from ret.behaviours.hide import HideBehaviour
-from ret.behaviours.move import AircraftMoveBehaviour
-from ret.behaviours.wait import WaitBehaviour
-from ret.creator.agents import create_agents
-from ret.orders.order import Order
-from ret.orders.tasks.fire import FireAtTargetTask
-from ret.sensing.distribution import TriangularDistribution
-from ret.sensing.sensor import (
+from mesa_ret.behaviours.deploycountermeasure import DeployCountermeasureBehaviour
+from mesa_ret.behaviours.fire import FireBehaviour
+from mesa_ret.behaviours.hide import HideBehaviour
+from mesa_ret.behaviours.move import AircraftMoveBehaviour
+from mesa_ret.behaviours.wait import WaitBehaviour
+from mesa_ret.creator.agents import create_agents
+from mesa_ret.orders.order import Order
+from mesa_ret.orders.tasks.fire import FireAtTargetTask
+from mesa_ret.sensing.distribution import TriangularDistribution
+from mesa_ret.sensing.sensor import (
     DistanceAttenuatedSensor,
     SensorClutterAttenuator,
     SensorDetectionTimings,
     SensorDistanceThresholds,
 )
-from ret.space.clutter.countermeasure import SphereCountermeasure
-from ret.weapons.weapon import BasicWeapon
+from mesa_ret.space.clutter.countermeasure import SphereCountermeasure
+from mesa_ret.weapons.weapon import BasicWeapon
 
 from . import iads_constants as iads_constants
 from .iads_agent_creator import IADSAgentCreator

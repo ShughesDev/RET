@@ -1,11 +1,12 @@
 repos:
   - repo: https://github.com/ambv/black
-    rev: 23.12.1
+    rev: 21.7b0
     hooks:
       - id: black
+        language_version: python3.9
         types: [python]
   - repo: https://github.com/pycqa/flake8
-    rev: 7.0.0
+    rev: 3.9.2
     hooks:
       - id: flake8
         additional_dependencies:
@@ -14,7 +15,7 @@ repos:
         stages: [manual]
         additional_dependencies: [darglint]
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v2.3.0
     hooks:
       - id: check-yaml
       - id: end-of-file-fixer
@@ -23,7 +24,17 @@ repos:
     rev: "v0.910"
     hooks:
       - id: mypy
-        name: mypy-ret
-        files: ^ret/ret/.*\.py$
-        entry: mypy ret
+        name: mypy-examples
+        files: ^examples/.*\.py$
+        entry: mypy examples
+        pass_filenames: false
+      - id: mypy
+        name: mypy-mesa-ret
+        files: ^mesa_ret/.*\.py$
+        entry: mypy mesa_ret
+        pass_filenames: false
+      - id: mypy
+        name: mypy-ret-tap
+        files: ^ret_tap/.*\.py$
+        entry: mypy ret_tap
         pass_filenames: false

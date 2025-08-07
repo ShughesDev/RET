@@ -2,7 +2,7 @@
 
 from setuptools import find_packages, setup
 
-requires = ["ret", "mesa"]
+requires = ["mesa_ret", "mesa"]
 extras_require = {"dev": ["flake8", "black"]}
 
 version = "20220303"

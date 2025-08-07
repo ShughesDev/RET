@@ -3,12 +3,12 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING
 
-from ret.behaviours.fire import (
+from mesa_ret.behaviours.fire import (
     DefaultHostileTargetResolver,
     FireBehaviour,
     RandomTargetSelector,
 )
-from ret.sensing.perceivedworld import (
+from mesa_ret.sensing.perceivedworld import (
     AirAgents,
     ArmourAgents,
     InfantryAgents,
@@ -19,11 +19,11 @@ from ret.sensing.perceivedworld import (
 if TYPE_CHECKING:
     from typing import Optional
 
-    from ret.agents.agent import RetAgent
-    from ret.behaviours.fire import HostileTargetResolver, TargetSelector
-    from ret.sensing.perceivedworld import PerceivedAgent
-    from ret.types import Coordinate2dOr3d
-    from ret.weapons.weapon import Weapon
+    from mesa_ret.agents.agent import RetAgent
+    from mesa_ret.behaviours.fire import HostileTargetResolver, TargetSelector
+    from mesa_ret.sensing.perceivedworld import PerceivedAgent
+    from mesa_ret.types import Coordinate2dOr3d
+    from mesa_ret.weapons.weapon import Weapon
 
 
 class RandomTargetSelectorWithAim(RandomTargetSelector):
@@ -88,7 +88,7 @@ class GroundTargetResolver(DefaultHostileTargetResolver):
         enemies = super().run(detector=detector, views=views)
         filter = Or([ArmourAgents(), InfantryAgents()])
         views = filter.run(enemies)
-        return [v.location for v in views]
+        return views
 
 
 class DirectFireBehaviour(FireBehaviour):
