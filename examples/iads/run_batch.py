@@ -3,7 +3,7 @@
 Iterates over one iteration.
 """
 
-from mesa_ret.batchrunner import FixedReportingBatchRunner
+from ret.batchrunner import FixedReportingBatchRunner
 
 from iads.model import IADS
 

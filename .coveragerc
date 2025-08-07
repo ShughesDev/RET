@@ -4,7 +4,7 @@ concurrency = multiprocessing
 
 [report]
 omit =
-    mesa_ret/testsret/*
+    ret/testsret/*
     ret_tap/tests/*
     mesa/*
 

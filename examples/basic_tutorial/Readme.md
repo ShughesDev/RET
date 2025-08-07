@@ -3,7 +3,7 @@
 ## Release Notes
 
 This basic tutorial on the use of the Rapid Exploratory modelling Toolset (RET) was written in Python 3.8 and using
-`mesa_ret` v1.0
+`ret` v1.0
 
 ## Structure
 

@@ -30,8 +30,8 @@ repos:
         pass_filenames: false
       - id: mypy
         name: mypy-mesa-ret
-        files: ^mesa_ret/.*\.py$
-        entry: mypy mesa_ret
+        files: ^ret/.*\.py$
+        entry: mypy ret
         pass_filenames: false
       - id: mypy
         name: mypy-ret-tap

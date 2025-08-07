@@ -11,7 +11,7 @@ This version is 1.0.0
 ### 30/03/2022 Release Version 1.0.0
 
 This is the first release version.
-This repo works with the mesa_ret repo, version 1.0.0
+This repo works with the ret repo, version 1.0.0
 This is intended for use by experienced analysts with software and simulation development experience.
 This is a deliverable developed under contract PO410000130089.
 This is a development framework and therefore up to the developer to ensure validity of results.
