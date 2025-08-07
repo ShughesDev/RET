@@ -5,11 +5,11 @@ import os
 from typing import TYPE_CHECKING
 
 from mesa.time import RandomActivation
-from mesa_ret.model import RetModel
-from mesa_ret.scenario_independent_data import ModelMetadata
-from mesa_ret.space.feature import CompoundAreaFeature
-from mesa_ret.space.space import ContinuousSpaceWithTerrainAndCulture3d
-from mesa_ret.visualisation.json_writer import JsonWriter
+from ret.model import RetModel
+from ret.scenario_independent_data import ModelMetadata
+from ret.space.feature import CompoundAreaFeature
+from ret.space.space import ContinuousSpaceWithTerrainAndCulture3d
+from ret.visualisation.json_writer import JsonWriter
 
 from . import constants
 from .friendly_agent_creator import FriendlyAgentCreator

@@ -31,7 +31,7 @@ var/
 *.spec
 
 # Auto-documentation files
-sphinx/mesa_ret*.rst
+sphinx/ret*.rst
 sphinx/modules.rst
 sphinx-out/*
 sphinx/_build
@@ -105,5 +105,5 @@ cov.xml
 
 output/*
 .DS_Store
-mesa_ret/.DS_Store
-mesa_ret/mesa_ret/.DS_Store
+ret/.DS_Store
+ret/ret/.DS_Store

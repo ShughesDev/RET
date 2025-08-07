@@ -1,7 +1,7 @@
 """Run Example model for playback output."""
 from datetime import datetime, timedelta
 
-from mesa_ret.batchrunner import FixedReportingBatchRunner
+from ret.batchrunner import FixedReportingBatchRunner
 
 from ret_example.model import ExampleModel
 

@@ -4,11 +4,11 @@ from __future__ import annotations
 import os
 from typing import TYPE_CHECKING
 
-from mesa_ret.space.culture import Culture
-from mesa_ret.space.heightband import AbsoluteHeightBand
+from ret.space.culture import Culture
+from ret.space.heightband import AbsoluteHeightBand
 
 if TYPE_CHECKING:
-    from mesa_ret.space.heightband import HeightBand
+    from ret.space.heightband import HeightBand
 
 IMAGE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "./images"))
 

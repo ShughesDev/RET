@@ -5,9 +5,9 @@ import os
 from datetime import datetime, timedelta
 
 from mesa.time import RandomActivation
-from mesa_ret.model import RetModel
-from mesa_ret.space.space import ContinuousSpaceWithTerrainAndCulture3d
-from mesa_ret.visualisation.json_writer import JsonWriter
+from ret.model import RetModel
+from ret.space.space import ContinuousSpaceWithTerrainAndCulture3d
+from ret.visualisation.json_writer import JsonWriter
 
 from . import iads_constants as iads_constants
 from .friendly_agent_creator import FriendlyAgentCreator

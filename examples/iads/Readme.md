@@ -10,7 +10,7 @@ This is an example for demonstration purposes. The source code should not be use
 It is solely intended as an initial showcase of some of the features.
 As it was initially implemented with an older version of the code, many newer features are not present.
 This repo works with the amended mesa repo, bundled with this example, version 1.0.0
-This repo works with the mesa_ret repo, version 1.0.0
+This repo works with the ret repo, version 1.0.0
 This is intended for use by experienced analysts.
 This is not a formal contractual deliverable (at this stage), but was developed under contract PO410000130089.
 

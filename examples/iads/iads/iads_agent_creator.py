@@ -5,8 +5,8 @@ from abc import ABC, abstractmethod
 from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:
-    from mesa_ret.agents.agent import RetAgent
-    from mesa_ret.model import RetModel
+    from ret.agents.agent import RetAgent
+    from ret.model import RetModel
 
 
 class IADSAgentCreator(ABC):
