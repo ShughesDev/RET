@@ -6,6 +6,8 @@ import warnings
 from dataclasses import dataclass
 from pathlib import Path
 from typing import TYPE_CHECKING, Iterable
+import os
+import logging
 
 from mesa.agent import Agent
 from ret.agents.affiliation import Affiliation
@@ -616,8 +618,14 @@ class RetAgent(Agent):
         """
         if icon_filepath is None:
             self._icon_filepath = str(self.icon_dict[self.affiliation])
-            with open(self._icon_filepath) as i:
-                self._icon = i.read()
+            if os.path.exists(self._icon_filepath):
+                with open(self._icon_filepath) as i:
+                    self._icon = i.read()
+            else:
+                logging.warning(
+                    "RetAgent.set_icon_paths() >> path: %s, doesn't exist.", str(self._icon_filepath)
+                )
+                return None
         else:
             if icon_filepath.lower().endswith(".svg"):
                 self._icon_filepath = str(icon_filepath)
